@@ -39,6 +39,7 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map',  //shows where exactly the error is generated!
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true
   }
 };
